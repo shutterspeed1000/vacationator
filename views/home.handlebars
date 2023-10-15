@@ -1,0 +1,27 @@
+{{#each usrReq as |users|}}
+
+
+<h2>Request by {{user.user}}</h2>
+<div style="width: 75%;">
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item">Reason: {{reason}}</li>
+    <li class="list-group-item">Admin for Approval: {{isAdmin}}</li>
+    <li class="list-group-item">Start Date: {{startDate}}</li>
+    <li class="list-group-item">End Date: {{endDate}}</li>
+    <li class="list-group-item">Created At: {{createdAt}}</li>
+
+    {{#if isApproved}}
+    <li class="list-group-item fw-bold">Approved</li>
+    {{else}}
+    <li class="list-group-item fw-bold">DENIED!</li>
+    {{/if}}
+
+  </ul>
+</div>
+
+<hr>
+
+
+
+
+{{/each}}

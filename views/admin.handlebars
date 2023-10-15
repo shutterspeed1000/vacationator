@@ -1,0 +1,24 @@
+<a href="/newuser"><button id="addUser">Add User</button></a>
+
+{{#each retUsers as |users|}}
+
+<h2>User #{{id}}</h2>
+<div style="width: 75%;">
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item">Username: {{user}}</li>
+    <li class="list-group-item">email:    {{email}}</li>
+    <li class="list-group-item">Admin:    {{isAdmin}}</li>
+  </ul>
+</div>
+
+<button class="update_user">Update User</button>
+<button data-id="{{id}}" class="delete_user">Delete User</button>
+
+<hr>
+
+  {{/each}}
+
+ <script src="./javascript/signup.js"></script>
+  <script src="./javascript/delUser.js"></script>
+
+</div>

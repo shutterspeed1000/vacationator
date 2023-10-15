@@ -1,0 +1,3 @@
+DROP DATABASE IF EXISTS chopper_db;
+
+CREATE DATABASE chopper_db;
